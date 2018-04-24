@@ -1,0 +1,28 @@
+<theme>
+    <formatVersion>4</formatVersion>
+    <include>./../esdee.xml</include>
+    
+    <!--carousel--> 
+    <feature supported="carousel">
+        <view name="system">
+            <image name="background" extra="true">
+                <path>./../_inc/assets/scummvm-hero.jpg</path>
+            </image>
+            <image name="logo">
+                <path>./../_inc/assets/scummvm-sd-logo.png</path>
+            </image>
+            <image name="e_mascot" extra="true">
+                <path>./../_inc/assets/scummvm-mascot.png</path>
+            </image>
+        </view>
+    </feature>
+
+    <view name="basic, video, detailed">
+        <image name="e_wall" extra="true">
+            <path>./../_inc/assets/scummvm-wall.jpg</path>
+        </image>
+        <image name="logo">
+            <path>./../_inc/assets/scummvm-sd-logo.png</path>
+        </image>
+    </view>
+</theme>

@@ -1,0 +1,245 @@
+<!--
+theme name:     ESDEE (pronounced 'SD')
+version:        1.0
+author:         Zombies Byte / Dal1980
+email:          dal1980@zombiesbyte.com
+website:        retro.zombiesbyte.com
+license:        creative commons CC-BY-NC-SA
+based on:       "Carbon" by Eric Hettervik
+-->
+
+<theme>
+
+    <formatVersion>4</formatVersion>
+
+    <!--carousel--> 
+    <feature supported="carousel">
+        <view name="system">
+            <helpsystem name="help">
+                <pos>0.21 0.965</pos>
+                <textColor>58646F</textColor>
+                <iconColor>58646F</iconColor>
+                <fontPath>./_inc/fonts/pixellari.ttf</fontPath>
+                <!--<fontSize>0.022</fontSize> <!-- 16:9/16:10 text-->
+                <!--<fontSize>0.018</fontSize> <!-- 4:3 text-->
+                <fontSize>0.018</fontSize> <!-- 4:3 text-->
+            </helpsystem>
+            <carousel name="systemcarousel">
+                <type>horizontal</type>
+                <color>292D3100</color>
+                <logoScale>1.0</logoScale>
+                <pos>0.0 0.60</pos>
+                <size>1.0 0.35</size>
+                <logoSize>0.25 0.25</logoSize>
+                <maxLogoCount>6</maxLogoCount>
+                <zIndex>10</zIndex>
+            </carousel>
+            <image name="e_base" extra="true">
+                <path>./_inc/images/_base.png</path>
+                <origin>0 0</origin>
+                <pos>0 0.90</pos>
+                <size>1.1 0.1</size>
+                <zIndex>4</zIndex>
+            </image>
+            <image name="e_navbg" extra="true">
+                <path>./_inc/images/nav-bg.png</path>
+                <origin>0 0</origin>
+                <pos>0 0.60</pos>
+                <size>1.0 0.37</size>
+                <zIndex>5</zIndex>
+            </image>
+            <image name="e_navfg" extra="true">
+                <path>./_inc/images/nav-fg.png</path>
+                <origin>0 0</origin>
+                <pos>0 0.60</pos>
+                <size>1.0 0.35</size>
+                <zIndex>11</zIndex>
+            </image>
+            <image name="e_heroscan" extra="true">
+                <path>./_inc/images/horzscan.png</path>
+                <origin>0 0</origin>
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <zIndex>7</zIndex>
+            </image>
+            <text name="systemInfo">
+                <backgroundColor>00000000</backgroundColor>
+                <color>ffff00</color>
+                <pos>0.47 0.958</pos>
+                <size>0.5 0.0292</size>
+                <alignment>right</alignment>
+                <fontPath>./_inc/fonts/pixellari.ttf</fontPath>
+                <fontSize>0.0292</fontSize>
+                <zIndex>10</zIndex>
+                <origin>0 0</origin>
+            </text>
+
+            <image name="background" extra="true">
+                <origin>0 0</origin>
+                <pos>0 0</pos>
+                <size>1 0.65</size>
+                <zIndex>1</zIndex>
+            </image>
+            <image name="logo">
+                <zIndex>10</zIndex>
+            </image>
+            <image name="e_mascot" extra="true">
+                <origin>0 0</origin>
+                <pos>0.01 0.75</pos>
+                <size>0.20 0.32</size>
+                <zIndex>11</zIndex>
+            </image>
+        </view>
+    </feature>
+
+    <view name="basic, video, detailed">
+        <helpsystem name="help">
+            <pos>0.03 0.97</pos>
+            <textColor>444D56</textColor>
+            <iconColor>58646F</iconColor>
+            <fontPath>./_inc/fonts/pixellari.ttf</fontPath>
+            <fontSize>0.022</fontSize>
+        </helpsystem>
+        <image name="gamelist_helper" extra="true">
+            <path>./_inc/images/bg_color.png</path>
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <color>292D31FF</color>
+            <zIndex>2</zIndex>
+        </image>
+        <image name="e_wall" extra="true">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <color>292D31DD</color>
+            <zIndex>3</zIndex>
+        </image>
+        <image name="e_heroscan" extra="true">
+            <path>./_inc/images/horzscan-alt.png</path>
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <zIndex>4</zIndex>
+        </image>
+        <image name="e_line" extra="true">
+            <path>./_inc/images/line.png</path>
+            <origin>0 0</origin>
+            <pos>0.03 .565</pos>
+            <size>0.94 0.01</size>
+            <zIndex>5</zIndex>
+        </image>
+        <image name="logo">
+            <origin>0.5 0</origin>
+            <pos>0.45 0.6</pos>
+            <maxSize>0.20 0.35</maxSize>
+            <zIndex>5</zIndex>
+        </image>
+        <image name="md_image">
+            <origin>1 0</origin>
+            <pos>0.97 0.03</pos>
+            <maxSize>.46 .46</maxSize>
+            <zIndex>20</zIndex>
+        </image>
+        <video name="md_video">
+            <origin>1 0</origin>
+            <pos>0.975 0.03</pos>
+            <maxSize>.5 .5</maxSize>
+            <delay>3.00</delay>
+            <zIndex>25</zIndex>
+            <showSnapshotNoVideo>false</showSnapshotNoVideo>
+            <showSnapshotDelay>false</showSnapshotDelay>
+        </video>
+        <textlist name="gamelist">
+            <selectorColor>FFFFFF</selectorColor>
+            <selectedColor>000000</selectedColor>
+            <primaryColor>ffff00</primaryColor>
+            <secondaryColor>0000FF</secondaryColor><!--don't know-->
+            <pos>0.97 0.60</pos>
+            <size>0.40 0.35</size>
+            <alignment>right</alignment>
+            <lineSpacing>1.6</lineSpacing>
+            <forceUppercase>1</forceUppercase>
+            <fontPath>./_inc/fonts/pixellari.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <origin>1 0</origin> 
+        </textlist>
+        
+        <!--meta labels-->
+        <text name="md_lbl_rating, md_lbl_players,
+                    md_lbl_genre, md_lbl_developer, 
+                    md_lbl_publisher, md_lbl_releasedate,
+                    md_lbl_playcount, md_lbl_lastplayed">
+            <forceUppercase>1</forceUppercase>
+            <fontPath>./_inc/fonts/pixellari.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <color>ffffff</color>
+            <origin>0 0.5</origin> 
+        </text>
+        <!--meta values-->
+        <text name="md_rating, md_players, 
+                    md_genre, md_developer, 
+                    md_publisher, md_releasedate,
+                    md_playcount, md_lastplayed">
+            <forceUppercase>1</forceUppercase>
+            <fontPath>./_inc/fonts/pixellari.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <color>ffff00</color>
+            <origin>0 0.5</origin> 
+        </text>
+
+        
+
+        <!--rating-->
+        <text name="md_lbl_rating"><pos>0.03 0.06</pos></text>
+        <rating name="md_rating">
+            <pos>0.12 0.06</pos>
+            <size>0.23 0.03</size>
+            <filledPath>./_inc/images/star_full.png</filledPath>
+            <unfilledPath>./_inc/images/star_hollow.png</unfilledPath>
+            <zIndex>30</zIndex>
+            <origin>0 0.5</origin> 
+        </rating>
+
+        <!--players-->
+        <text name="md_lbl_players"><pos>0.03 0.12</pos></text>
+        <text name="md_players"><pos>0.12 0.12</pos></text>
+
+        <!--genre-->
+        <text name="md_lbl_genre"><pos>0.03 0.18</pos></text>
+        <text name="md_genre"><pos>0.12 0.18</pos></text>
+
+        <!--developer-->
+        <text name="md_lbl_developer"><pos>0.03 0.24</pos></text>
+        <text name="md_developer"><pos>0.12 0.24</pos></text>
+
+        <!--publisher-->
+        <text name="md_lbl_publisher"><pos>0.03 0.30</pos></text>
+        <text name="md_publisher"><pos>0.12 0.30</pos></text>        
+
+        <!--released-->
+        <text name="md_lbl_releasedate"><pos>0.03 0.36</pos></text>
+        <datetime name="md_releasedate"><pos>0.12 0.36</pos></datetime>        
+
+        <!--times played-->
+        <text name="md_lbl_playcount"><text>xPLAYED:</text><pos>0.03 0.42</pos></text>
+        <text name="md_playcount"><pos>0.12 0.42</pos></text>        
+
+        <!--last played-->
+        <text name="md_lbl_lastplayed"><text>LAST PLAY:</text><pos>0.03 0.48</pos></text>
+        <datetime name="md_lastplayed"><pos>0.12 0.48</pos></datetime>        
+
+        <!--description-->
+        <text name="md_description">
+            <pos>0.03 0.60</pos>
+            <size>0.30 0.35</size>
+            <alignment>left</alignment>
+            <lineSpacing>1.6</lineSpacing>
+            <forceUppercase>1</forceUppercase>
+            <fontPath>./_inc/fonts/pixellari.ttf</fontPath>
+            <fontSize>0.018</fontSize>
+            <color>ffff00</color>
+            <origin>0 0</origin> 
+        </text>
+    </view>
+</theme>
